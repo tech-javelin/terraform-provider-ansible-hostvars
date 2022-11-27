@@ -1,9 +1,9 @@
 package provider
 
 import (
-	"context"
+	// "context"
 
-	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
+	// "github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
@@ -26,10 +26,10 @@ func init() {
 func New(version string) func() *schema.Provider {
 	return func() *schema.Provider {
 		return &schema.Provider{
-			DataSourcesMap: map[string]*schema.Resource{
-			},
+			DataSourcesMap: map[string]*schema.Resource{},
 			ResourcesMap: map[string]*schema.Resource{
-				"ansible_role_bind_host": resourceHost(),
+				// "bindrole_zone": resourceZone(),
+				"bindrole_host": resourceHost(),
 			},
 		}
 	}

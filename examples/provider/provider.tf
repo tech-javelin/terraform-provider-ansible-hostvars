@@ -1,3 +1,3 @@
-provider "ansible_role_bind" {
+provider "bindrole" {
   # example configuration here
 }
